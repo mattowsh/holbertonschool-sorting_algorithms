@@ -24,14 +24,14 @@ void quick_sort(int *array, size_t size)
 void recursion(int *array, size_t size, int min, int max)
 {
 	int pivot;
-	
+
 	if (min < max)
 	{
-		// for the pivot to be at the right place
+		/** for the pivot to be at the right place */
 		pivot = partition(array, size, min, max);
-		// for the first part of the partittion
+		/** for the first part of the partittion */
 		recursion(array, size, min, pivot - 1);
-		// for the second one
+		/** for the second one */
 		recursion(array, size, pivot + 1, max);
 	}
 }
@@ -54,11 +54,11 @@ int partition(int *array, size_t size, int min, int max)
 		if (array[j] < pivot)
 		{
 			i++;
-			// se swapea array[i] con array[j]
+			/** se swapea array[i] con array[j] */
 			swap(array, size, i, j);
 		}
 	}
-	// se swapea el pivot con el array[i + 1]
+	/** se swapea el pivot con el array[i + 1] */
 	swap(array, size, i + 1, max);
 
 	return (i + 1);
