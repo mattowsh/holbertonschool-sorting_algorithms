@@ -8,34 +8,63 @@
 
 void insertion_sort_list(listint_t **list)
 {
-	int aux, aux2;
-	listint_t *current, *nextnode, *prevnode;
+	listint_t *current = NULL, *aux = NULL;
 
-	if (!list)
+	if (!list || !(*list))
 		return;
 
-	currentnode = *list;
-	
+	current = *list;
 	while (current)
 	{
-		nextnode = current->next;
-		prevnode = current->prev;
-
-		if (nextnode != NULL && (current->n > nextnode->n))
+		aux = current->next;
+		while (current->prev && (current->n < current->prev->n))
 		{
-			current->next = nextnode->next;
-			current->prev = nextnode;
-			nextnode->next = current;
-			nextnode->prev = prevnode;
-			print_list(list);
-			/* to reset pointers */
-			currentnode = prevnode;
-			nextnode = nextnode->next;
-			current = prevnode->next;
+			swapnodes(current, current->prev, list);
+			print_list(*list);
 		}
-		if (prevnode != NULL && (current->n > prevnode->n))
-		{
-
-		}
+		current = aux;
 	}
+}
+
+/**
+ * swapnodes  - Swaps two elements of a double linked list
+ * @nodeA : a double linked list node
+ * @nodeB : other double linked list node
+ * @list : doubly linked list to be sorted
+ */
+
+void swapnodes(listint_t *nodeA, listint_t *nodeB, listint_t **list)
+{
+	listint_t *aux;
+	listint_t *aux_pointer[4];
+
+	/* rename if out of order */
+	if (nodeB->next == nodeA)
+	{
+		aux = nodeA;
+		nodeA = nodeB;
+		nodeB = aux;
+	}
+
+	/* creates auxiliar values of each node */
+	aux_pointer[0] = nodeA->prev;
+	aux_pointer[1] = nodeB->prev;
+	aux_pointer[2] = nodeA->next;
+	aux_pointer[3] = nodeB->next;
+
+
+	nodeA->prev = aux_pointer[2];
+	nodeB->prev = aux_pointer[0];
+	nodeA->next = aux_pointer[3];
+	nodeB->next = aux_pointer[1];
+
+
+	if (nodeA->next)
+		nodeA->next->prev = nodeA;
+
+	if (nodeB->prev)
+		nodeB->prev->next = nodeB;
+
+	if (nodeB->prev == NULL)
+		*list = nodeB;
 }
