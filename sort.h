@@ -24,5 +24,8 @@ void insertion_sort_list(listint_t **list);
 void swapnodes(listint_t *nodeA, listint_t *nodeB, listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+void swap(int *array, size_t, int min, int max);
+int partition(int *array, size_t size, int min, int max);
+void recursion(int *array, size_t size, int min, int max);
 
 #endif
