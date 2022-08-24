@@ -75,8 +75,11 @@ void swap(int *array, size_t size, int min, int max)
 {
 	int aux;
 
-	aux = array[min];
-	array[min] = array[max];
-	array[max] = aux;
-	print_array(array, size);
+	if (array[min] != array[max])
+	{
+		aux = array[min];
+		array[min] = array[max];
+		array[max] = aux;
+		print_array(array, size);
+	}
 }
