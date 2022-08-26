@@ -1,10 +1,10 @@
-# <a  href="https://www.python.org/"> <img src="https://cdn-icons-png.flaticon.com/512/3281/3281313.png" alt="Sorting algorithm" width=4% heigth=4% ></img></a> Sorting algorithms & Big O
+# <a> <img src="https://cdn-icons-png.flaticon.com/512/3281/3281313.png" alt="Sorting algorithm" width=6% heigth=6% ></img></a> Sorting algorithms & Big O
 The **Sorting algorithms & Big O project** is a project of Foundations: second trimester, of the career Software Engineering at Holberton School.
 
 The authors are Felipe Sandim & Belén Matto.
 Holberton School, 2022.  
 
-## Sorting algorithmsi
+## Sorting algorithms
 A **sorting algorithm** is an algorithm that puts elements of a list into an **order**, either ascending or descending. Efficient sorting is important for optimizing the efficiency of other algorithms that require input data to be in sorted lists (e.g. search algorithms).
 
 The output is a **permutation of the input**: a reordering, yet retaining all of the original elements.
