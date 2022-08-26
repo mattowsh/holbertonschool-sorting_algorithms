@@ -12,7 +12,7 @@ The output is a **permutation of the input**: a reordering, yet retaining all of
 For optimum efficiency, **the input data should be stored in a data structure** which allows random access rather than one that allows only sequential access (e.g. an array or doubly linked lists).
 
 ## Big O notation
-Big-O notation represents the upper bound of the running time of an algorithm. Therefore, it gives **the worst-case complexity of an algorithm.**
+Big-O notation represents the upper bound of the running time of an algorithm. Therefore, it gives **the worst-case complexity of an algorithm.** In other words, represents the relation, in the worst-case, between the execution time of an algorithm and the increasing input length.
 
 ## Learning Objectives
 - At least four different sorting algorithms
