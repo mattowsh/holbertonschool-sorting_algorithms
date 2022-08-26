@@ -1,44 +1,27 @@
-# Sorting algorithms & Big O
+# <a  href="https://www.python.org/"> <img src="https://cdn-icons-png.flaticon.com/512/3281/3281313.png" alt="Sorting algorithm" width=4% heigth=4% ></img></a> Sorting algorithms & Big O
 The **Sorting algorithms & Big O project** is a project of Foundations: second trimester, of the career Software Engineering at Holberton School.
 
 The authors are Felipe Sandim & Belén Matto.
 Holberton School, 2022.  
 
-## Sorting algorithms
-/// UPDATE ///
+## Sorting algorithmsi
+A **sorting algorithm** is an algorithm that puts elements of a list into an **order**, either ascending or descending. Efficient sorting is important for optimizing the efficiency of other algorithms that require input data to be in sorted lists (e.g. search algorithms).
 
-## Big O
-/// UPDATE ///
+The output is a **permutation of the input**: a reordering, yet retaining all of the original elements.
 
-## C libraries used
-- `<stdio.h>`
-- `<string.h>`
-- `<sys/stat.h>`
-- `<fcntl.h>`
-- `<unistd.h>`
-/// UPDATE ///
+For optimum efficiency, **the input data should be stored in a data structure** which allows random access rather than one that allows only sequential access (e.g. an array or doubly linked lists).
 
-## Files and folders
-- **`sort.h`** : Header File
-/// UPDATE ///
+## Big O notation
+Big-O notation represents the upper bound of the running time of an algorithm. Therefore, it gives **the worst-case complexity of an algorithm.**
 
-## Usage example
-Clone this repository:
-
-    git clone https://github.com/mattowsh/holbertonschool-sorting_algorithms.git
-
-Compile the files in the following way:
-
-    gcc -Wall -Werror -Wextra -pedantic -std=gnu89 ///UPDATE///
-
-You can use the interpreter by typing:
-
-	./monty your_montybyte_code.m ///UPDATE///
-
-PONER IMAGEN DE EJ USO
+## Learning Objectives
+- At least four different sorting algorithms
+- What is the Big O notation, and how to evaluate the time complexity of an algorithm
+- How to select the best sorting algorithm for a given input
+- What is a stable sorting algorithm
 
 ## Authors
-[Felipe Sandim](PONER LINK DE LINKEDIN)  
+[Felipe Sandim](https://github.com/m1dnas)  
 [Belén Matto](https://www.linkedin.com/in/mattobelen/) 
 
 Montevideo, Uruguay.
