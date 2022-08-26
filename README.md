@@ -1,4 +1,4 @@
-# <a> <img src="https://cdn-icons-png.flaticon.com/512/3281/3281313.png" alt="Sorting algorithm" width=6% heigth=6% ></img></a> Sorting algorithms & Big O
+# <a> <img src="https://cdn-icons-png.flaticon.com/512/3281/3281295.png" alt="Sorting algorithm" width=5% heigth=5% ></img></a> Sorting algorithms & Big O
 The **Sorting algorithms & Big O project** is a project of Foundations: second trimester, of the career Software Engineering at Holberton School.
 
 The authors are Felipe Sandim & Belén Matto.
